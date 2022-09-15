@@ -1,15 +1,12 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Main from './pages/Main'
+import Main from './pages/Main';
+import Nav from './pages/Filter';
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Main/>} />
-        </Routes>
-      </BrowserRouter>
+      <Nav/>
+      <Main/>
     </>
   );
 }
