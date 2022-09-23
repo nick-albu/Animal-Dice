@@ -1,13 +1,8 @@
 import './Beasts.scss';
-import React, { useEffect } from 'react';
+import React from 'react';
 
 
 function Beasts ({ filteredBeasts }) {
-
-    useEffect(()=>{
-        console.log(filteredBeasts)
-    },[filteredBeasts])
-    
 
     function handleExpand(containerID) {
         const element = document.getElementById(containerID);
